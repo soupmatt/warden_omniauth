@@ -1,5 +1,6 @@
 require 'warden'
-require 'omniauth'
+require 'omniauth/core'
+require 'omniauth/oauth'
 
 class WardenOmniAuth
   DEFAULT_CALLBACK = lambda do |user|
