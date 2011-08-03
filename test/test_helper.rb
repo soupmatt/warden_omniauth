@@ -4,7 +4,7 @@ require 'rack'
 require 'rack/test'
 include Nanotest
 include Nanotest::Contexts
-
+require 'omniauth/oauth'
 require 'warden_omniauth'
 
 Warden::Manager.serialize_into_session do |user|
